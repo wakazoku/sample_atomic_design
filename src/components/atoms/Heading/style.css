@@ -26,3 +26,8 @@
 .h6 {
   font-size: 1.0rem;
 }
+
+.underlined {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: .5rem;
+}

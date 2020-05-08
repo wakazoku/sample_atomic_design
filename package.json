@@ -26,7 +26,7 @@
     "recompose": "^0.26.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "3.2.16",
+    "@storybook/addon-actions": "^3.2.16",
     "@storybook/addon-chapters": "0.6.2",
     "@storybook/addon-notes": "3.3.8",
     "@storybook/addon-storyshots": "3.3.3",

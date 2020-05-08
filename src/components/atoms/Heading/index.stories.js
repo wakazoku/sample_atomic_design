@@ -10,11 +10,17 @@ export default (stories) =>
         見出しレベル1, 見た目2
       </Heading>
     ))
+    .add("divで", () => (
+      <Heading tag="div" level={3}>
+        divでやってみた
+      </Heading>
+    ))
     .add("下線付き", () => <HeadingUnderlined>下線付き</HeadingUnderlined>)
     .add("下線付き,レベル1", () => (
       <HeadingUnderlined level={1}>下線付き,レベル1</HeadingUnderlined>
     ))
     .add("下線付き,レベル1,見た目2", () => (
-      <HeadingUnderlined level={1} visualLevel={2}>下線付き,レベル1,見た目2</HeadingUnderlined>
-    ))
-    ;
+      <HeadingUnderlined level={1} visualLevel={2}>
+        下線付き,レベル1,見た目2
+      </HeadingUnderlined>
+    ));

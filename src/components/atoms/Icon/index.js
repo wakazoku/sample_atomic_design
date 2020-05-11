@@ -43,10 +43,6 @@ export const IconContainer2 = function ({
   className = "",
   ...props
 }) {
-  console.log("presenter");
-  console.log(presenter);
-  console.log("presenter({ onClick, className, ...props })");
-  console.log(presenter({ onClick, className, ...props }));
   if (onClick) className += `${styles.clickable}`;
   return presenter({ onClick, className, ...props });
 };

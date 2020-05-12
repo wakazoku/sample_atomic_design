@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import React from "react";
 import styles from "./styles.css";
 import { TrashCanIcon } from "../../atoms/Icon/index";

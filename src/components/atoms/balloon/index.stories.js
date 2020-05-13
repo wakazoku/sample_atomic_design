@@ -1,5 +1,6 @@
 import React from "react";
 import Balloon from "./index";
+import { TrashCanIcon } from "../Icon/index";
 
 export default (stories) =>
   stories
@@ -9,4 +10,10 @@ export default (stories) =>
       <Balloon style={{ position: "absolute", top: "200px", left: "200px" }}>
         左上から200pxに配置
       </Balloon>
-    ));
+    ))
+    .add("アイコンラベル", () => (
+      <Balloon>
+        <TrashCanIcon />
+      </Balloon>
+    ))
+    .add("絵文字", () => <Balloon>x</Balloon>);

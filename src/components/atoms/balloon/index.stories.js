@@ -1,6 +1,7 @@
 import React from "react";
-import Balloon from "./index";
+import Balloon, { BalloonTip } from "./index";
 import { TrashCanIcon } from "../Icon/index";
+import { withStyle } from "../../utils/decorator";
 
 export default (stories) =>
   stories
@@ -16,4 +17,12 @@ export default (stories) =>
         <TrashCanIcon />
       </Balloon>
     ))
-    .add("絵文字", () => <Balloon>x</Balloon>);
+    .add("絵文字", () => <Balloon>x</Balloon>)
+    .add("バルーンチップ", () =>
+      withStyle({ marginTop: "50px" })(
+        <p>
+          ここに<BalloonTip label="注釈を記述するUI">バルーンチップ</BalloonTip>
+          を表示
+        </p>
+      )
+    );
